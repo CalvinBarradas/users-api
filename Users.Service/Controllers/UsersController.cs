@@ -17,7 +17,7 @@ namespace Users.Controllers
     [ApiController]
     [Route("api/users")]
     [TypeFilter(typeof(ApiExceptionFilter))]
-    public class UsersController : Controller
+    public class UsersController : ControllerBase
     {
         private readonly UsersContext _repo;
 

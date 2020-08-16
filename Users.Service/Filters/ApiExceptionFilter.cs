@@ -48,7 +48,7 @@ namespace Users.Filters
 
             context.Result = result;
 
-            _logger.LogCritical(errorDetails.Detail);
+            _logger.LogError(errorDetails.Detail);
             context.ExceptionHandled = true;
         }
     }
